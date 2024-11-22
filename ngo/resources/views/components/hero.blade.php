@@ -13,20 +13,24 @@
             background-size: cover;
             background-position: center;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start; /* Aligns items to the top */
+            justify-content: center; /* Centers items horizontally */
             color: white;
             text-align: center;
             border-radius: 10px;
+            padding-top: 20px; 
         }
+
+
+
     </style>
 </head>
 <body>
 
     <div class="hero-section">
         <div>
-            <h1 class="text-2xl mt-66 font-weight-bold">Help Us Make a Difference</h1>
-            <p class="lead">
+            <h1 class="text-3xl mt-66 font-weight-bold">Help Us Make a Difference</h1>
+            <p class="lead text-xl mb-2">
                 Join hands with us to donate food, clothes, and essentials to those in need.
             </p>
             <button class="text-white bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2" onclick="window.location.href='/sponsor'">Get Involved</button>

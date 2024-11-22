@@ -4,40 +4,40 @@
 
 @section('content')
 <div>
-    <section class="bg-gray-200 text-gray-800 rounded-md">
+    <section class="bg-gray-700 text-gray-800 rounded-md">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <div class="lg:text-center">
-                <h2 class="text-base text-red-600 font-semibold tracking-wide uppercase">Defend • Rescue • Deliver</h2>
-                <p class="mt-4 max-w-2xl text-xl leading-8 text-gray-600 lg:mx-auto">
-                    Sponsor a Child to Love
+                <h2 class="text-base text-red-500 font-semibold tracking-wide uppercase">Defend • Rescue • Deliver</h2>
+                <p class="mt-4 max-w-2xl text-xl leading-8 text-white lg:mx-auto">
+                    Sponsor to Love
                 </p>
             </div>
 
-            <div class="mt-10">
+            <div class="mt-10 ml-5">
                 <div class="flex">
                     <div>
                         <img 
                             src="{{ asset('images/hero.jpeg') }}" 
                             alt="Image 1" 
-                            class="rounded-md shadow-md w-96 h-96"
+                            class="rounded-md shadow-md w-96 h-80"
                         />
                     </div>
                     <div>
                         <img 
                             src="{{ asset('images/elderly.jpg') }}"
                             alt="Image 2" 
-                            class="mx-auto rounded-md shadow-md w-96 h-96"
+                            class="mx-auto rounded-md shadow-md w-96 h-80"
                         />
                     </div>
                     <div>
                         <img 
                             src="{{ asset('images/spon.jpeg') }}"
                             alt="Image 2" 
-                            class="mx-auto rounded-md shadow-md w-96 h-96"
+                            class="mx-auto rounded-md shadow-md w-96 h-80"
                         />
                     </div>  
                 </div>
-                <p class="mt-6 text-lg text-pink-700 text-center">
+                <p class="mt-6 mr-5 text-lg text-pink-400 text-center">
                     Relationships are a key component of Children to Love and what we stand for. Help support the growth and
                     development of a child in need in a tangible way!
                 </p>
@@ -106,7 +106,7 @@
                     Sponsor a Child Today
                 </a>
                 <a
-                    href="sponsorform2"
+                    href="{{ route('sponsorform2')}}"
                     class="mb-4 px-6 py-3 bg-blue-600 text-white font-medium text-sm rounded-md shadow-md hover:bg-blue-500 transition">
                     Sponsor an Elderly Today
                 </a>
@@ -120,7 +120,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 py-8">
+    {{-- <footer class="bg-gray-100 py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="col-span-1">
@@ -152,7 +152,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> --}}
 </div>
 @endsection
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Sponsorship;
 use Illuminate\Http\Request;
 
 class SponsorController extends Controller
@@ -17,8 +18,21 @@ class SponsorController extends Controller
             'message' => 'nullable|string|max:500',
         ]);
 
-        // Process the sponsorship request
+        // Store the sponsorship data
+        Sponsorship::create([
+            'gender' => $request->input('gender'),
+            'age' => $request->input('age'),
+            'childName' => $request->input('childName'),
+            'amount' => $request->input('amount'),
+            'message' => $request->input('message'),
+        ]);
 
-        return redirect()->back()->with('success', 'Sponsorship request submitted successfully!');
+        // Redirect to the confirmation page
+        return redirect()->route('sponsor.confirmation');
+    }
+
+    public function confirmation()
+    {
+        return view('confirmation'); // Display QR code page
     }
 }

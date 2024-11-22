@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Book Review App</title>
+    <title>NGO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
@@ -18,8 +18,8 @@
         <div class="hidden md:flex space-x-10 ml-16">
             <a href="{{ url('/') }}" class="hover:text-gray-400">Home</a>
             <a href="{{ route('about') }}" class="hover:text-gray-400">About Us</a>
-            <a href="#" class="hover:text-gray-400">Contact</a>
-            <a href="#" class="hover:text-gray-400">Blogs</a>
+            <a href="{{ route('contact') }}" class="hover:text-gray-400">Contact</a>
+            <a href="{{ route('blogs') }}" class="hover:text-gray-400">Blogs</a>
         </div>
         <div class="flex space-x-4">
             <a href="{{ route('donate') }}" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded h-9 w-24 text-center">Donate</a>

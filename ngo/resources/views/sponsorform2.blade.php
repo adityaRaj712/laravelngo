@@ -9,9 +9,9 @@
     </nav>
 
     <div class="max-w-3xl mx-auto p-8">
-        <h2 class="text-center text-3xl font-bold mb-3">Sponsor a Child to Love</h2>
+        <h2 class="text-center text-3xl font-bold mb-3">Sponsor a Elderly to Love</h2>
         <img 
-            src="{{ asset('images/children.jpg') }}" 
+            src="{{ asset('images/elderly.jpg') }}" 
             alt="Image 1" 
             class="mx-auto rounded-md shadow-md max-w-full h-auto mb-3"
         />
@@ -21,7 +21,7 @@
             <div>
                 <label class="block text-lg font-semibold">Gender Preference</label>
                 <div class="flex gap-4">
-                    @foreach (['Girl', 'Boy', 'Either gender'] as $gender)
+                    @foreach (['Man', 'Woman', 'Either gender'] as $gender)
                         <label>
                             <input type="radio" name="gender" value="{{ $gender }}" /> {{ $gender }}
                         </label>
@@ -32,7 +32,7 @@
             <div>
                 <label class="block text-lg font-semibold">Age Preference</label>
                 <div class="flex gap-4">
-                    @foreach (['0 - 10 years old', '11 - 18 years old', 'College Student', 'Any age'] as $age)
+                    @foreach (['50 - 60 years old', '60 - 70 years old', '70-80', 'Any age'] as $age)
                         <label>
                             <input type="radio" name="age" value="{{ $age }}" /> {{ $age }}
                         </label>
@@ -41,7 +41,7 @@
             </div>
 
             <div>
-                <label class="block text-lg font-semibold">Child’s Name (if known)</label>
+                <label class="block text-lg font-semibold">Elderly Name (if known)</label>
                 <input
                     type="text"
                     name="childName"
